@@ -9,7 +9,7 @@ btnPin = 16
 # Setup GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(ledPin, GPIO.OUT)
-GPIO.setup(ledPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(btnPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 GPIO.output(ledPin, GPIO.LOW)
 
