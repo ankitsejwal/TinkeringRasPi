@@ -1,8 +1,9 @@
+#!bin/python3
+
 import RPi.GPIO as GPIO
 import time
 
 # Pin definition
-
 ledPin = 18
 btnPin = 24
 
@@ -17,7 +18,7 @@ GPIO.output(ledPin, GPIO.LOW)
 try:
     while True:
         if GPIO.input(btnPin) == 0:  #not pressed
-            print "button pressed"
+            print("button pressed")
             GPIO.cleanup()
 except KeyboardInterrupt:
     GPIO.cleanup()
