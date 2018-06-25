@@ -12,7 +12,7 @@ class PiThing(object):
 
     def read_switch(self):
         ''' read the state of the switch '''
-        return GPIO.input(SWITCH_PIN)
+        return 'The switch is ON' if GPIO.input(SWITCH_PIN) else 'The swtich is OFF'
 
     def set_led(self, value):
         ''' turn led on or off by setting a value '''
